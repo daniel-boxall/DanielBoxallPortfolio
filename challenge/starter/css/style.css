@@ -62,6 +62,11 @@ p {
   transition: 0.5s ease;
 }
 
+.name {
+  font-size: 2.5vw;
+  font-weight: 800;
+}
+
 .hero-banner {
   position:relative;
   height: 280px;
@@ -87,17 +92,10 @@ p {
   height: 250px;
 }
 
-.hero-text1{
+.hero-text{
   font-size: 30px;
   position: absolute;
   bottom: 30%;
-  right: 5%;
-}
-
-.hero-text2{
-  font-size: 2rem;
-  position: absolute;
-  bottom: 1.5%;
   right: 5%;
 }
 
