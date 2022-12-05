@@ -1,0 +1,310 @@
+:root {
+  --dark: rgba(16, 62, 105, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 'sans-serif';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+} 
+
+li{
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+/* vavigation styling */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 5vw;
+  padding: 30px;
+  background-color: var(--dark);
+  color: white;
+}
+
+.navlinks {
+  display: flex;
+  padding: 2vw;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.navlinks a {
+  color: white;
+}
+
+.navlinks li {
+  margin: 20px;
+  padding: 15px 30px;
+}
+
+.navlinks li:hover {
+  box-shadow: inset 5px 10px 20px 10px rgba(0,0,0,0.15);
+  border-radius: 15px;
+  transition: 0.5s ease;
+}
+
+.name {
+  font-size: 2.5vw;
+  font-weight: 800;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 5px 10px 20px 10px rgba(0,0,0,0.15);
+}
+
+/* hero banner styling */
+
+.hero-banner {
+  position:relative;
+  height: 280px;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  background-color:var(--dark);
+}
+
+#hero-bg {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+#profile {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border:rgba(0, 51, 204, 1) 5px solid;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  box-shadow: 5px 10px 20px 10px rgba(0,0,0,0.15);
+}
+
+.hero-text{
+  font-size: 30px;
+  position: absolute;
+  bottom: 30%;
+  right: 5%;
+}
+
+/* about me styling */
+
+.about h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 20px;
+}
+
+.about p {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px;
+  
+}
+
+/* showcase styling */
+
+#work {
+  padding: 50px;
+  
+}
+
+#work h2{
+  text-align: center;
+  font-size: 4rem;
+  color: black;
+  padding: 20px;
+}
+
+#work-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-card {
+  border: 2px solid #777;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  margin: 20px;
+  box-shadow: 5px 10px 20px 10px rgba(0,0,0,0.15), 0 6px 6px rgba(0,0,0,0.25);
+}
+
+.card {
+  width: 270px;
+  height: 400px;
+  margin: 10px;
+  border: 2px solid #777;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 5px 10px 10px 5px rgba(0,0,0,0.15), 0 6px 6px rgba(0,0,0,0.25);
+}
+
+.card-image {
+  height: 170px;
+  background-color: #777;
+  background-size: cover; 
+  border-radius: 15px 15px 0 0;
+}
+
+.featurecard-image {
+  height: 340px;
+  background-size: cover; 
+  border-radius: 15px 15px 0 0;
+}
+
+.card-1 {
+  background-image: url('../images/02-portfolio-1.jpg');
+}
+
+.card-2 {
+  background-image: url('../images/02-portfolio-2.jpg');
+}
+
+.card-3 {
+  background-image: url('../images/02-portfolio-3.jpg');
+}
+
+.card-4 {
+  background-image: url('../images/02-portfolio-4.jpg');
+}
+
+.card-5 {
+  background-image: url('../images/02-run-buddy.jpg');
+}
+
+.feature-card h3{
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.feature-card p {
+  font-size: 1.5rem;
+  padding: 20px;
+}
+
+.card h3{
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.card p {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.feature-card a,
+.card a {
+  background-color: var(--dark);
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  margin : 20px 50px;
+}
+
+.feature-card a{
+  margin : 20px 50px;
+  padding: 10px;
+}
+
+.feature-card:hover,
+.feature-card:focus, 
+.card:hover,
+.card:focus {
+  background-color: rgba(62,62,62,0.5);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.10);
+  transition: all 1s ease;
+}
+
+.feature-card:hover,
+.feature-card:focus  {
+  transform: scale(1.05)
+}
+
+/* contact styling */
+
+.contact {
+  background-color: white;
+  padding: 50px;
+}
+
+.contact h2{
+  text-align: center;
+  font-size: 4rem;
+  color: black;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contact-info a {
+  padding: 10px;
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+  cursor: pointer;
+}
+
+address  {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 20px;
+  margin-left: 30px;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  box-shadow: 5px 10px 20px 10px rgba(0,0,0,0.15), 0 6px 6px rgba(0,0,0,0.25);
+}
+
+.contact-logo {
+  height: 75px;
+  margin-left: 100px;
+}
+
+address a:hover {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  color: white;
+  background-color: var(--dark);
+  transition: 1s ease;
+}
+
+  
+
+
+  
