@@ -1,5 +1,5 @@
 # My Portfolio page
-[link to deployment](https://xbnhndbdhoj.com)
+[link to deployment](https://daniel-boxall.github.io/DanielBoxallPortfolio/)
 
 
 
@@ -15,6 +15,9 @@ ___
 4. redesign the app when i have better UI skills.
 
 <sup>Currently there are no projects so all the project cards are placeholders.</sup>
+
+___
+
 
 
 
